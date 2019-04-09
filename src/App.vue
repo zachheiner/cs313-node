@@ -68,17 +68,17 @@ export default {
       drawer: false,
       menu  : [
         {
-          icon : 'contact_mail',
+          icon : 'insert_photo',
           route: '/',
           label: 'View Posts'
         },
         {
-          icon : 'contact_mail',
+          icon : 'add_photo_alternate',
           route: '/new-post',
           label: 'New Post'
         },
         {
-          icon : 'contact_mail',
+          icon : 'build',
           route: '/builder',
           label: 'Shoe Builder'
         },
