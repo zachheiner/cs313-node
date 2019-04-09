@@ -18,7 +18,7 @@ class Post extends Sequelize.Model {
         LEFT JOIN public."shoe-models"    as sm ON sm.id = s.model
         LEFT JOIN public."shoe-colorways" as sc ON sc.id = s.colorway
       WHERE
-        psr.post = 1;`
+        psr.post = ${this.id};`
     );
 
     // const PostRelations = require('./PostRelations.js').default;
@@ -40,8 +40,8 @@ Post.init({
 
 }, { sequelize, modelName: 'post' });
 
- sequelize.sync({force: true});
-//sequelize.sync();
+//  sequelize.sync({force: true});
+sequelize.sync();
 
 module.exports = {
   default: Post
