@@ -40,8 +40,8 @@ Post.init({
 
 }, { sequelize, modelName: 'post' });
 
-//  sequelize.sync({force: true});
-sequelize.sync();
+ sequelize.sync({force: true});
+//sequelize.sync();
 
 module.exports = {
   default: Post
