@@ -16,9 +16,9 @@ ShoeColorway.init({
   }
 }, { sequelize, modelName: 'shoe-colorway' });
 
-sequelize.sync({force: true});
-// sequelize.sync();
-
+// sequelize.sync({force: true});
+sequelize.sync();
+//adding a line to see what happens
 module.exports = {
   default: ShoeColorway
 };
